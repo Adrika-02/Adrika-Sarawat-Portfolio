@@ -1,0 +1,117 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animated gradient text */
+@keyframes gradient-move {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-move 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Ripple effect for buttons */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(96,165,250,0.3);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+  pointer-events: none;
+}
+.ripple:active:after {
+  width: 200px;
+  height: 200px;
+  transition: 0s;
+}
+
+/* Glassmorphism (extra) */
+.glass {
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Floating label support */
+.floating-label input:focus ~ label,
+.floating-label input:not(:placeholder-shown) ~ label,
+.floating-label textarea:focus ~ label,
+.floating-label textarea:not(:placeholder-shown) ~ label {
+  top: 0.5rem;
+  left: 0.75rem;
+  font-size: 0.85rem;
+  color: #60a5fa;
+}
+
+/* Validation icon animation */
+.input-icon {
+  transition: color 0.2s, opacity 0.2s;
+  opacity: 0.7;
+}
+.input-icon.valid {
+  color: #34d399;
+  opacity: 1;
+}
+.input-icon.invalid {
+  color: #f87171;
+  opacity: 1;
+}
+
+/* Auto-expanding textarea (handled by JS, but smooth transition) */
+textarea {
+  transition: height 0.2s;
+}
+
+/* Subtle checkmark animation (SVG is animated in HTML) */
+#success-checkmark {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Micro-interactions */
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 2px #60a5fa33;
+  border-color: #60a5fa;
+}
+button:active {
+  transform: scale(0.97);
+}
+button.ripple:active:after {
+  width: 200px;
+  height: 200px;
+  transition: 0s;
+}
