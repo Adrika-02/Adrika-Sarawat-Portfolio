@@ -1,0 +1,441 @@
+<!DOCTYPE html><html lang="en">  <head>    <meta charset="UTF-8" />    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <title>Adrika Sarawat | Portfolio</title>  <!-- Tailwind CSS CDN -->    <script src="https://cdn.tailwindcss.com"></script>  <!-- Google Fonts: Inter -->  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">  <!-- Heroicons CDN -->  <script src="https://unpkg.com/feather-icons"></script>  <!-- Favicon -->  <link rel="icon" href="images/Adrika-Profile.jpg" />  <!-- Devicon CDN for official tech logos -->  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">  <style>    html { scroll-behavior: smooth; }    body { font-family: 'Inter', sans-serif; }    /* Navbar underline animation */    .nav-link {      position: relative;      transition: color 0.2s;    }    .nav-link::after {      content: '';      position: absolute;      left: 0; right: 0; bottom: -2px;      height: 2px;      background: #60a5fa; /* blue-400 */      border-radius: 2px;      transform: scaleX(0);      transition: transform 0.3s;    }    .nav-link:hover::after, .nav-link:focus::after {      transform: scaleX(1);    }  </style>  </head><body class="bg-slate-900 text-white min-h-screen">  <!-- Home Section with background image and modern hero layout -->  <section id="home" class="relative w-full min-h-[70vh] flex items-center justify-center px-2 sm:px-4 md:px-8">    <!-- Background image with overlay -->    <div class="absolute inset-0 w-full h-full z-0">      <img src="Adrika-Profile.jpg" alt="Adrika Sarawat (Profile Image)" onerror="this.style.display='none';console.error('Profile image not found!');" class="w-full h-full object-cover object-center grayscale brightness-50" style="filter: grayscale(1) brightness(0.5);" />      <div class="absolute inset-0 bg-black bg-opacity-60"></div>    </div>    <!-- Main content on top -->    <div class="relative z-10 flex flex-col items-center justify-center text-center px-2 sm:px-4 py-16 sm:py-24 md:py-32 w-full">      <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">Hello, I'm <span class="text-blue-400">Adrika Sarawat</span></h1>
+      <span id="typing" class="block text-blue-400 text-lg sm:text-xl md:text-2xl font-semibold mb-6 h-7 min-h-[1.5em] animate-gradient bg-gradient-to-r from-blue-400 via-blue-300 to-blue-500 bg-clip-text text-transparent"></span>
+      <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-blue-200 mb-4">Aspiring Full Stack Developer</h2>      <p class="text-sm sm:text-base md:text-lg text-slate-200 max-w-2xl mb-8 drop-shadow mx-auto">        Passionate about building clean, impactful, and user-focused digital solutions. Open to new opportunities and collaborations in web development, UI/UX, and tech innovation.      </p>      <!-- Quick Stats Row -->      <div class="flex flex-wrap justify-center gap-4 sm:gap-8 mb-8">        <div class="flex flex-col items-center min-w-[80px]">          <span class="text-xl sm:text-2xl font-bold text-blue-400">B.Tech</span>          <span class="text-slate-200 text-xs sm:text-sm">in progress</span>        </div>        <div class="flex flex-col items-center min-w-[80px]">          <span class="text-xl sm:text-2xl font-bold text-blue-400">5+</span>          <span class="text-slate-200 text-xs sm:text-sm">Projects</span>        </div>        <div class="flex flex-col items-center min-w-[80px]">          <span class="text-xl sm:text-2xl font-bold text-blue-400">2+</span>          <span class="text-slate-200 text-xs sm:text-sm">Internships</span>        </div>      </div>      <!-- Main Action Buttons -->      <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 justify-center w-full max-w-xs sm:max-w-none">        <a href="#projects" class="bg-blue-600 px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition w-full sm:w-auto">View My Work</a>        <a href="#contact" class="border border-blue-400 text-blue-400 px-6 py-2 rounded-lg hover:bg-blue-800 transition w-full sm:w-auto">Get In Touch</a>      </div>      <!-- Dynamic Typing Effect Below Buttons -->      <span id="typing" class="block text-blue-400 text-lg sm:text-xl md:text-2xl font-semibold mb-6 h-7 min-h-[1.5em] animate-gradient bg-gradient-to-r from-blue-400 via-blue-300 to-blue-500 bg-clip-text text-transparent"></span>      <!-- Social Links -->      <div class="flex gap-4 mb-8 justify-center">        <a href="https://www.linkedin.com/in/adrika-sarawat-99209a328/" target="_blank" aria-label="LinkedIn"><i data-feather="linkedin" class="w-6 h-6 text-blue-400 hover:text-blue-200"></i></a>        <a href="https://github.com/Adrika-02" target="_blank" aria-label="GitHub"><i data-feather="github" class="w-6 h-6 text-blue-400 hover:text-blue-200"></i></a>      </div>      <!-- Scroll Down Prompt -->      <div class="mt-4 animate-bounce text-blue-400 text-base sm:text-lg font-semibold opacity-80">        <span>&#8595; Scroll Down</span>      </div>    </div>    </section>  <!-- Open to Opportunities Banner (moved below Home) -->  <div class="w-full bg-gradient-to-b from-blue-800/80 to-slate-900/70 text-blue-100 py-1.5 text-xs sm:text-sm font-medium tracking-wide" style="letter-spacing:0.01em;">
+    <div class="container mx-auto px-2 sm:px-4 md:px-8 text-left max-w-xl mx-auto">
+      Open to Full Stack/Web Developer Internships & Collaborations!
+    </div>
+  </div>
+  <!-- Summary Section (moved below Home) -->  <section id="summary" class="container mx-auto flex flex-col md:flex-row justify-center items-center py-8 sm:py-12 md:py-16 px-2 sm:px-4 md:px-8">    <div class="bg-slate-800 rounded-2xl shadow-lg p-6 sm:p-8 md:p-12 flex flex-col md:flex-row items-center gap-6 md:gap-8 w-full max-w-4xl">      <div class="flex-1">        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Summary</h2>
+        <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400/40 via-blue-300/30 to-blue-600/40 rounded-full"></div>
+        <p class="text-base sm:text-lg text-slate-200 mb-4">Aspiring Full Stack Developer passionate about building clean, impactful, and user-focused digital solutions. Open to new opportunities and collaborations in web development, UI/UX, and tech innovation.</p>
+        <p class="text-blue-400 font-semibold">Let's work together to create something amazing!</p>      </div>      <div class="flex flex-col items-center">        <img src="Adrika-Profile.jpg" alt="Adrika Sarawat (Profile Image)" onerror="this.style.display='none';console.error('Profile image not found!');" class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-2xl shadow-2xl transition-transform duration-300 hover:shadow-[0_0_32px_8px_rgba(59,130,246,0.5)] hover:scale-110 mb-2 mx-auto" />        <div class="flex gap-3 mt-2">          <a href="https://www.linkedin.com/in/adrika-sarawat-99209a328/" target="_blank" aria-label="LinkedIn"><i data-feather="linkedin" class="w-6 h-6 text-blue-400 hover:text-blue-200"></i></a>          <a href="https://github.com/Adrika-02" target="_blank" aria-label="GitHub"><i data-feather="github" class="w-6 h-6 text-blue-400 hover:text-blue-200"></i></a>        </div>      </div>    </div>  </section>    <!-- About Section -->  <section id="about" class="relative container mx-auto py-10 sm:py-16 md:py-24 bg-slate-800 rounded-xl my-8 px-2 sm:px-4 md:px-8 overflow-hidden">    <!-- Floating Animated Icons for About Me -->    <div class="pointer-events-none select-none absolute inset-0 z-0">
+      <i data-feather="user" class="text-blue-400 opacity-10 absolute animate-float-slow" style="top:8%;left:10%;width:56px;height:56px;"></i>
+      <i data-feather="feather" class="text-blue-300 opacity-10 absolute animate-float-medium" style="top:70%;left:15%;width:48px;height:48px;"></i>
+      <i data-feather="book-open" class="text-blue-200 opacity-10 absolute animate-float-fast" style="top:25%;right:12%;width:44px;height:44px;"></i>
+      <i data-feather="activity" class="text-blue-400 opacity-10 absolute animate-float-medium" style="bottom:15%;right:20%;width:48px;height:48px;"></i>
+      <i data-feather="lightbulb" class="text-blue-200 opacity-10 absolute animate-float-slow" style="bottom:20%;left:45%;width:44px;height:44px;"></i>
+      <i data-feather="briefcase" class="text-blue-200 opacity-10 absolute animate-float-slow" style="top:15%;right:30%;width:44px;height:44px;"></i>
+      </div>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">About Me</h2>
+    <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400/40 via-blue-300/30 to-blue-600/40 rounded-full"></div>
+    <div class="flex flex-col md:flex-row gap-6 md:gap-12 p-2 md:p-4 relative z-10">
+      <!-- Bio -->
+      <div class="flex-1 bg-slate-900 rounded-lg p-4 sm:p-6 md:p-8 shadow-lg m-2">
+        <p class="mb-4 text-sm sm:text-base md:text-lg">
+          Hello! I'm Adrika Sarawat, a passionate and curious Computer Science student who thrives at the intersection of technology, creativity, and impact. I love turning ideas into clean, functional, and human-centered digital experiences—whether it's through full-stack development, thoughtful UI/UX design, or meaningful collaboration.
+        </p>
+        <p class="mb-4 text-sm sm:text-base md:text-lg">
+          With hands-on experience from real-world internships, I've built complete web applications, crafted responsive interfaces, and worked across the full development cycle—from planning to deployment. These experiences have shaped me into a confident problem-solver with a strong foundation in both frontend and backend technologies.
+        </p>
+        <p class="text-sm sm:text-base md:text-lg">
+          I'm detail-driven, always eager to learn, and excited by challenges that push me to grow—as a developer, a designer, and a thinker. I enjoy teaming up with people who share a vision for using tech to make a real difference.
+        </p>
+          </div>
+      <!-- Timeline -->
+      <div class="flex-1 flex flex-col gap-6 md:gap-8">
+        <div class="bg-slate-900 rounded-lg p-4 sm:p-6 md:p-8 shadow-lg m-2">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 text-blue-200">Education & Experience</h3>
+          <ul class="border-l-2 border-blue-400 pl-4">
+            <li class="mb-4 text-sm sm:text-base">
+              <span class="font-bold text-blue-300">Present:</span> Pursuing B.Tech in Computer Science<br />
+              <span class="text-blue-200">SRM Institute of Science and Technology (SRMIST)</span><br />
+              <span class="text-blue-400 font-medium">Current CGPA: 9.05</span>
+            </li>
+            <li class="mb-4 text-sm sm:text-base">
+              <span class="font-bold text-blue-300">June'25 – Present:</span> Vice-Chairperson<br />
+              <span class="text-blue-200">GeeksforGeeks Campus Body SRMIST Delhi-NCR Campus</span>
+              </li>
+            <li class="text-sm sm:text-base">
+              <span class="font-bold text-blue-300">June – July 2025:</span> Internships (Frontend & Backend Development)<br />
+              <span class="text-blue-200">Gained hands-on experience with modern web technologies and development workflows.</span>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>  </section>  <!-- Skills Section (ENHANCED) -->  <section id="skills" class="relative container mx-auto py-10 sm:py-16 md:py-24 bg-slate-800 rounded-xl my-8 px-2 sm:px-4 md:px-8 overflow-hidden">    <!-- Floating Animated Icons -->    <div class="pointer-events-none select-none absolute inset-0 z-0">      <i class="devicon-react-original colored text-[70px] opacity-20 absolute animate-float-slow" style="top:10%;left:8%"></i>      <i class="devicon-nodejs-plain colored text-[60px] opacity-20 absolute animate-float-medium" style="top:60%;left:12%"></i>      <i class="devicon-javascript-plain colored text-[50px] opacity-20 absolute animate-float-fast" style="top:30%;right:10%"></i>      <i class="devicon-git-plain colored text-[60px] opacity-20 absolute animate-float-medium" style="bottom:12%;right:18%"></i>      <i class="devicon-css3-plain colored text-[50px] opacity-20 absolute animate-float-slow" style="bottom:18%;left:40%"></i>      <i class="devicon-mongodb-plain colored text-[60px] opacity-20 absolute animate-float-fast" style="top:18%;right:30%"></i>      <i class="devicon-html5-plain colored text-[40px] opacity-20 absolute animate-float-medium" style="bottom:10%;right:8%"></i>    </div>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Skills</h2>
+    <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400/40 via-blue-300/30 to-blue-600/40 rounded-full"></div>
+    <div class="flex flex-col md:flex-row gap-8 md:gap-12 p-2 md:p-4 relative z-10">      <!-- Technical Skills Combined Grid -->      <div class="flex-1">        <h3 class="text-lg sm:text-xl font-semibold mb-6 text-blue-200 text-center">Technical Skills</h3>        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">          <!-- Frontend & Backend Skills Combined -->          <div class="skill-card group" title="HTML5: 4+ years">            <i class="devicon-html5-plain colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">HTML5</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 95%"></div>            </div>          </div>          <div class="skill-card group" title="CSS3: 4+ years">            <i class="devicon-css3-plain colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">CSS3</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 90%"></div>            </div>          </div>          <div class="skill-card group" title="JavaScript: 3+ years">            <i class="devicon-javascript-plain colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">JavaScript</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>            </div>          </div>          <div class="skill-card group" title="Tailwind CSS: 2+ years">            <i class="devicon-tailwindcss-plain colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">Tailwind</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 80%"></div>            </div>          </div>          <div class="skill-card group" title="React.js: 2+ years">            <i class="devicon-react-original colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">React.js</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 75%"></div>            </div>          </div>          <div class="skill-card group" title="Node.js: 2+ years">            <i class="devicon-nodejs-plain colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">Node.js</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 75%"></div>            </div>          </div>          <div class="skill-card group" title="Express.js: 2+ years">            <i class="devicon-express-original colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">Express.js</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 70%"></div>            </div>          </div>          <div class="skill-card group" title="MongoDB: 2+ years">            <i class="devicon-mongodb-plain colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">MongoDB</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 70%"></div>            </div>          </div>        </div>        <!-- Tools -->        <h3 class="text-lg sm:text-xl font-semibold mt-10 mb-6 text-blue-200 text-center">Tools</h3>        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">          <div class="skill-card group" title="Git: 3+ years">            <i class="devicon-git-plain colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">Git</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>            </div>          </div>          <div class="skill-card group" title="GitHub: 3+ years">            <i class="devicon-github-original colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">GitHub</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>            </div>          </div>          <div class="skill-card group" title="VS Code: 3+ years">            <i class="devicon-vscode-plain colored text-5xl mb-2"></i>            <span class="text-base font-medium text-blue-100">VS Code</span>            <div class="w-full bg-blue-900 rounded-full h-2 mt-2">              <div class="bg-blue-400 h-2 rounded-full" style="width: 80%"></div>            </div>          </div>        </div>      </div>      <!-- Soft Skills Grid (No Card, Centered) -->      <div class="flex-1 flex flex-col items-center justify-center mt-8 md:mt-0">        <h3 class="text-lg sm:text-xl font-semibold mb-6 text-blue-200 text-center">Soft Skills</h3>        <div class="grid grid-cols-2 gap-4 sm:gap-8 w-full max-w-xs">          <div class="flex flex-col items-center">            <i data-feather="activity" class="w-8 h-8 text-blue-100 mb-2"></i>            <span class="text-base font-medium text-blue-50 text-center">Problem Solving</span>          </div>          <div class="flex flex-col items-center">            <i data-feather="users" class="w-8 h-8 text-blue-100 mb-2"></i>            <span class="text-base font-medium text-blue-50 text-center">Teamwork</span>          </div>          <div class="flex flex-col items-center">            <i data-feather="message-circle" class="w-8 h-8 text-blue-100 mb-2"></i>            <span class="text-base font-medium text-blue-50 text-center">Communication</span>          </div>          <div class="flex flex-col items-center">            <i data-feather="refresh-cw" class="w-8 h-8 text-blue-100 mb-2"></i>            <span class="text-base font-medium text-blue-50 text-center">Adaptability</span>          </div>          <div class="flex flex-col items-center">            <i data-feather="feather" class="w-8 h-8 text-blue-100 mb-2"></i>            <span class="text-base font-medium text-blue-50 text-center">Creativity</span>          </div>          <div class="flex flex-col items-center">            <i data-feather="star" class="w-8 h-8 text-blue-100 mb-2"></i>            <span class="text-base font-medium text-blue-50 text-center">Leadership</span>          </div>        </div>      </div>    </div>    <style>      .skill-card {        @apply bg-slate-900/70 backdrop-blur rounded-xl shadow-lg flex flex-col items-center p-6 transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 border border-blue-800 cursor-pointer relative;        animation: fadeInUp 1s ease;      }      @keyframes fadeInUp {        0% { opacity: 0; transform: translateY(40px); }        100% { opacity: 1; transform: translateY(0); }      }      @keyframes float-slow {        0% { transform: translateY(0) scale(1) rotate(0deg); }        50% { transform: translateY(-30px) scale(1.05) rotate(8deg); }        100% { transform: translateY(0) scale(1) rotate(0deg); }      }      @keyframes float-medium {        0% { transform: translateY(0) scale(1) rotate(0deg); }        50% { transform: translateY(-18px) scale(1.03) rotate(-6deg); }        100% { transform: translateY(0) scale(1) rotate(0deg); }      }      @keyframes float-fast {        0% { transform: translateY(0) scale(1) rotate(0deg); }        50% { transform: translateY(-10px) scale(1.01) rotate(5deg); }        100% { transform: translateY(0) scale(1) rotate(0deg); }      }      .animate-float-slow { animation: float-slow 7s ease-in-out infinite; }      .animate-float-medium { animation: float-medium 5s ease-in-out infinite; }      .animate-float-fast { animation: float-fast 3.5s ease-in-out infinite; }    </style>  </section>  <!-- Certifications Section -->  <section id="certifications" class="container mx-auto py-8 sm:py-12 md:py-16 bg-slate-800 rounded-xl my-8 px-2 sm:px-4 md:px-8">    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Certifications</h2>
+    <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400/40 via-blue-300/30 to-blue-600/40 rounded-full"></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 p-1 md:p-4">      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">CODE CLASH 2.0 Hackathon</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">CodeClash, May 2025</span>        <a href="Certifications/Code Clash.pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">Artificial Intelligence</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">Acmegrade, Aug 2024</span>        <a href="Certifications/ACMEGRADE Training Certificate.pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">Frontend Web Development with JavaScript and ReactJS</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">DevTown, Jul 2024</span>        <a href="Certifications/DevTown Frontend.pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">Backend Web Development using NodeJS and Express</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">DevTown, Jun 2024</span>        <a href="Certifications/DevTown Backend.pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">SQL for Analyst</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">DevTown, Jul 2025</span>        <a href="Certifications/DevTown (SQL).pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">Frontend Development Certification</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">OneRoadmap, Jun 2025</span>        <a href="Certifications/OneRoadMap Frontend Development (Skill Test).pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">React.js Developer</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">LearnTube.ai, Jun 2025</span>        <a href="Certifications/LearnTube (React.JS).pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">AI Tools Workshop</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">Be10x, Jul 2025</span>        <a href="Certifications/Be10X(AI Tools Workshop).pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-3 md:p-6 flex flex-col items-center border border-blue-800 min-h-[180px] md:min-h-[220px] text-center transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 hover:border-blue-400">        <i data-feather="award" class="w-8 h-8 md:w-10 md:h-10 text-blue-400 mb-2 md:mb-3 mx-auto"></i>        <span class="text-base md:text-lg font-semibold text-blue-100 mb-1">Deloitte Australia- Technology Job Simulation</span>        <span class="text-xs md:text-sm text-blue-300 mb-2">Forage, Jul 2025</span>        <a href="Certifications/Deloitte(Technology Job Simulation).pdf" target="_blank" class="text-blue-400 hover:underline text-xs">View Certificate</a>      </div>    </div>  </section>  <!-- Volunteering Section -->  <section id="volunteering" class="container mx-auto py-8 sm:py-12 md:py-16 bg-slate-800 rounded-xl my-8 px-2 sm:px-4 md:px-8 relative overflow-hidden">
+    <!-- Floating Animated Icons for Volunteering -->
+    <div class="pointer-events-none select-none absolute inset-0 z-0">
+      <i data-feather="users" class="text-blue-400 opacity-10 absolute animate-float-slow" style="top:10%;left:8%;width:56px;height:56px;"></i>
+      <i data-feather="heart" class="text-blue-300 opacity-10 absolute animate-float-medium" style="top:60%;left:12%;width:48px;height:48px;"></i>
+      <i data-feather="book" class="text-blue-200 opacity-10 absolute animate-float-fast" style="top:30%;right:10%;width:44px;height:44px;"></i>
+      <i data-feather="activity" class="text-blue-400 opacity-10 absolute animate-float-medium" style="bottom:15%;right:20%;width:48px;height:48px;"></i>
+      <i data-feather="globe" class="text-blue-200 opacity-10 absolute animate-float-slow" style="bottom:18%;left:40%;width:44px;height:44px;"></i>
+      <i data-feather="award" class="text-blue-300 opacity-10 absolute animate-float-fast" style="top:18%;right:25%;width:40px;height:40px;"></i>
+      <i data-feather="smile" class="text-blue-200 opacity-10 absolute animate-float-medium" style="bottom:10%;right:10%;width:44px;height:44px;"></i>
+      <i data-feather="sun" class="text-blue-400 opacity-10 absolute animate-float-slow" style="top:45%;left:50%;width:48px;height:48px;"></i>
+      <i data-feather="flag" class="text-blue-300 opacity-10 absolute animate-float-fast" style="bottom:30%;left:20%;width:40px;height:40px;"></i>
+      <i data-feather="star" class="text-blue-200 opacity-10 absolute animate-float-medium" style="top:70%;right:30%;width:44px;height:44px;"></i>
+    </div>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Volunteering</h2>
+    <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400/40 via-blue-300/30 to-blue-600/40 rounded-full"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 p-2 md:p-4">
+      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center border border-blue-800 gap-4">
+        <i data-feather="users" class="w-10 h-10 text-blue-400 mb-3 md:mb-0"></i>
+        <div>
+          <span class="text-lg font-semibold text-blue-100 mb-1 block">Project Vidya Intern – Community Development</span>
+          <span class="text-blue-300 text-sm mb-1 block">Nirman Welfare Foundation | Jun 2024 – Jul 2024</span>
+          <span class="text-slate-300 text-sm block mb-2">Contributed actively to Project Vidya, focusing on fieldwork, content writing, and community engagement. Demonstrated strong leadership, responsibility, and teamwork in organizing educational and outreach activities.</span>
+        </div>
+      </div>
+      <div class="bg-slate-900/70 backdrop-blur rounded-xl shadow-lg p-6 flex flex-col md:flex-row items-center border border-blue-800 gap-4">
+        <i data-feather="activity" class="w-10 h-10 text-blue-400 mb-3 md:mb-0"></i>
+        <div>
+          <span class="text-lg font-semibold text-blue-100 mb-1 block">Community Outreach Intern</span>
+          <span class="text-blue-300 text-sm mb-1 block">Achal Welfare Foundation | Jun 2025 – Present</span>
+          <span class="text-slate-300 text-sm block">Engaged in community-driven initiatives including park beautification, wall painting, and awareness campaigns. Contributed to Park Revamping, collaborated with interns and residents, and developed teamwork, civic responsibility, and organizational skills.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Internships Section -->
+  <section id="internships" class="container mx-auto py-8 sm:py-12 md:py-16 bg-slate-800 rounded-xl my-8 px-2 sm:px-4 md:px-8">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Internships</h2>
+    <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400/40 via-blue-300/30 to-blue-600/40 rounded-full"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 p-2 md:p-4">
+      <!-- ELEVATE LABS Internship -->
+      <div class="bg-slate-900/60 backdrop-blur-md rounded-2xl border border-blue-500/60 border-t-2 border-b-2 border-gradient-to-r from-blue-400 to-blue-600 shadow-lg p-7 flex flex-col gap-4 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_32px_8px_rgba(59,130,246,0.18)] hover:border-blue-400/80 group relative overflow-hidden">
+        <div class="flex items-center gap-3 mb-2">
+          <i data-feather="briefcase" class="w-6 h-6 text-blue-400"></i>
+          <span class="text-xl font-bold text-blue-100">Web Development Intern</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 text-blue-300 font-semibold text-base mb-1">
+          <span>Elevate Labs</span>
+          <span class="bg-blue-800/70 text-blue-200 text-xs font-medium px-3 py-1 rounded-full">Remote</span>
+          <span class="text-xs text-blue-200 font-normal">June 2024 – Aug 2024</span>
+        </div>
+        <p class="text-slate-200 text-sm leading-relaxed">Built responsive UIs with React, Node.js, and MongoDB. Collaborated with cross-functional teams to deliver scalable web solutions. Automated deployment pipelines and improved app performance by 30%.</p>
+      </div>
+      <!-- VAULTOFCODES Internship -->
+      <div class="bg-slate-900/60 backdrop-blur-md rounded-2xl border border-blue-500/60 border-t-2 border-b-2 border-gradient-to-r from-blue-400 to-blue-600 shadow-lg p-7 flex flex-col gap-4 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_32px_8px_rgba(59,130,246,0.18)] hover:border-blue-400/80 group relative overflow-hidden">
+        <div class="flex items-center gap-3 mb-2">
+          <i data-feather="briefcase" class="w-6 h-6 text-blue-400"></i>
+          <span class="text-xl font-bold text-blue-100">Frontend Developer Intern</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 text-blue-300 font-semibold text-base mb-1">
+          <span>VaultofCodes</span>
+          <span class="bg-blue-800/70 text-blue-200 text-xs font-medium px-3 py-1 rounded-full">Remote</span>
+          <span class="text-xs text-blue-200 font-normal">May 2024 – June 2024</span>
+        </div>
+        <p class="text-slate-200 text-sm leading-relaxed">Developed interactive landing pages using HTML, CSS, and JavaScript. Enhanced website accessibility and SEO. Worked closely with designers to implement pixel-perfect UI components.</p>
+      </div>
+    </div>
+    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="relative container mx-auto py-10 sm:py-16 md:py-24 bg-slate-800 rounded-xl my-8 px-2 sm:px-4 md:px-8 overflow-hidden">
+    <!-- Floating Animated Icons for Projects -->
+    <div class="pointer-events-none select-none absolute inset-0 z-0">
+      <i class="devicon-react-original colored text-[60px] opacity-15 absolute animate-float-slow" style="top:12%;left:10%"></i>
+      <i class="devicon-nodejs-plain colored text-[50px] opacity-15 absolute animate-float-medium" style="top:70%;left:15%"></i>
+      <i class="devicon-javascript-plain colored text-[40px] opacity-15 absolute animate-float-fast" style="top:25%;right:12%"></i>
+      <i class="devicon-git-plain colored text-[50px] opacity-15 absolute animate-float-medium" style="bottom:15%;right:20%"></i>
+      <i class="devicon-css3-plain colored text-[40px] opacity-15 absolute animate-float-slow" style="bottom:20%;left:45%"></i>
+      <!-- Project-related Feather icons -->
+      <i data-feather="folder" class="text-blue-400 opacity-10 absolute animate-float-slow" style="top:8%;right:18%;width:56px;height:56px;"></i>
+      <i data-feather="code" class="text-blue-300 opacity-10 absolute animate-float-medium" style="bottom:10%;left:30%;width:48px;height:48px;"></i>
+      <i data-feather="layers" class="text-blue-200 opacity-10 absolute animate-float-fast" style="top:60%;right:8%;width:44px;height:44px;"></i>
+      <i data-feather="git-branch" class="text-blue-400 opacity-10 absolute animate-float-medium" style="bottom:25%;right:35%;width:48px;height:48px;"></i>
+    </div>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Projects</h2>
+    <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400/40 via-blue-300/30 to-blue-600/40 rounded-full"></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 p-2 md:p-4 relative z-10">
+      <!-- Project Card -->
+      <a href=" https://adrika-02.github.io/Fashion-Catalog/" target="_blank" class="bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-lg p-8 flex flex-col border border-blue-800 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_32px_8px_rgba(59,130,246,0.25)] hover:border-gradient-to-r hover:from-blue-400 hover:to-blue-600 group mt-0 relative overflow-hidden">
+        <div class="h-40 bg-blue-900/80 rounded-xl mb-4 flex flex-col items-center justify-center relative">
+          <div class="absolute top-3 left-3 flex gap-2 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+            <i class="devicon-html5-plain colored text-2xl"></i>
+            <i class="devicon-css3-plain colored text-2xl"></i>
+            <i class="devicon-javascript-plain colored text-2xl"></i>
+            <i data-feather="shopping-bag" class="w-6 h-6 text-blue-200"></i>
+          </div>
+          <span class="text-2xl text-blue-100 font-bold mt-6">Fashion Catalog</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">HTML</span>
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">CSS</span>
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">JavaScript</span>
+        </div>
+        <p class="text-slate-200 mb-2">A modern fashion catalog web app. Built with HTML, CSS, and JavaScript.</p>
+        <span class="text-blue-400 text-sm">Role: Developer</span>
+        <span class="text-blue-400 text-xs mt-1 group-hover:underline group-hover:text-blue-300 transition">View Live</span>
+      </a>
+      <a href="https://adrika-02.github.io/My-Blog/" target="_blank" class="bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-lg p-8 flex flex-col border border-blue-800 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_32px_8px_rgba(59,130,246,0.25)] hover:border-gradient-to-r hover:from-blue-400 hover:to-blue-600 group mt-4 relative overflow-hidden">
+        <div class="h-40 bg-blue-900/80 rounded-xl mb-4 flex flex-col items-center justify-center relative">
+          <div class="absolute top-3 left-3 flex gap-2 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">
+            <i class="devicon-html5-plain colored text-2xl"></i>
+            <i class="devicon-css3-plain colored text-2xl"></i>
+            <i data-feather="edit" class="w-6 h-6 text-blue-200"></i>
+          </div>
+          <span class="text-2xl text-blue-100 font-bold mt-6">My Blog</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">HTML</span>
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">CSS</span>
+        </div>
+        <p class="text-slate-200 mb-2">A personal blog platform. Built with HTML and CSS.</p>
+        <span class="text-blue-400 text-sm">Role: Developer</span>
+        <span class="text-blue-400 text-xs mt-1 group-hover:underline group-hover:text-blue-300 transition">View Live</span>
+      </a>
+      <a href=" https://adrika-02.github.io/Style-Snap/" target="_blank" class="bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-lg p-8 flex flex-col border border-blue-800 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_32px_8px_rgba(59,130,246,0.25)] hover:border-gradient-to-r hover:from-blue-400 hover:to-blue-600 group mt-8 relative overflow-hidden">
+        <div class="h-40 bg-blue-900/80 rounded-xl mb-4 flex flex-col items-center justify-center relative">
+          <div class="absolute top-3 left-3 flex gap-2 group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300">
+            <i class="devicon-css3-plain colored text-2xl"></i>
+            <i class="devicon-javascript-plain colored text-2xl"></i>
+            <i data-feather="camera" class="w-6 h-6 text-blue-200"></i>
+          </div>
+          <span class="text-2xl text-blue-100 font-bold mt-6">Style Snap</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">CSS</span>
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">JavaScript</span>
+        </div>
+        <p class="text-slate-200 mb-2">A style inspiration app. Built with CSS and JavaScript.</p>
+        <span class="text-blue-400 text-sm">Role: Developer</span>
+        <span class="text-blue-400 text-xs mt-1 group-hover:underline group-hover:text-blue-300 transition">View Live</span>
+      </a>
+      <a href="https://adrika-02.github.io/To-Do-List-Adrika-/" target="_blank" class="bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-lg p-8 flex flex-col border border-blue-800 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_32px_8px_rgba(59,130,246,0.25)] hover:border-gradient-to-r hover:from-blue-400 hover:to-blue-600 group mt-0 relative overflow-hidden">
+        <div class="h-40 bg-blue-900/80 rounded-xl mb-4 flex flex-col items-center justify-center relative">
+          <div class="absolute top-3 left-3 flex gap-2 group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-300">
+            <i class="devicon-javascript-plain colored text-2xl"></i>
+            <i data-feather="check-square" class="w-6 h-6 text-blue-200"></i>
+          </div>
+          <span class="text-2xl text-blue-100 font-bold mt-6">To-Do List</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">JavaScript</span>
+        </div>
+        <p class="text-slate-200 mb-2">A simple to-do list app. Built with JavaScript.</p>
+        <span class="text-blue-400 text-sm">Role: Developer</span>
+        <span class="text-blue-400 text-xs mt-1 group-hover:underline group-hover:text-blue-300 transition">View Live</span>
+      </a>
+      <a href="https://adrika-02.github.io/Contact-Form/" target="_blank" class="bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-lg p-8 flex flex-col border border-blue-800 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_32px_8px_rgba(59,130,246,0.25)] hover:border-gradient-to-r hover:from-blue-400 hover:to-blue-600 group mt-4 relative overflow-hidden">
+        <div class="h-40 bg-blue-900/80 rounded-xl mb-4 flex flex-col items-center justify-center relative">
+          <div class="absolute top-3 left-3 flex gap-2 group-hover:scale-110 group-hover:rotate-1 transition-transform duration-300">
+            <i class="devicon-css3-plain colored text-2xl"></i>
+            <i data-feather="mail" class="w-6 h-6 text-blue-200"></i>
+          </div>
+          <span class="text-2xl text-blue-100 font-bold mt-6">Contact Form</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="bg-blue-700 text-xs px-2 py-1 rounded-full">CSS</span>
+        </div>
+        <p class="text-slate-200 mb-2">A responsive contact form. Built with CSS.</p>
+        <span class="text-blue-400 text-sm">Role: Developer</span>
+        <span class="text-blue-400 text-xs mt-1 group-hover:underline group-hover:text-blue-300 transition">View Live</span>
+      </a>
+      </div>
+    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="relative container mx-auto py-10 sm:py-16 md:py-24 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900 rounded-xl my-8 px-2 sm:px-4 md:px-8 overflow-hidden">
+    <!-- Floating Animated Icons for Contact -->
+    <div class="pointer-events-none select-none absolute inset-0 z-0">
+      <i class="devicon-github-original colored text-[60px] opacity-15 absolute animate-float-slow" style="top:18%;left:12%"></i>
+      <i class="devicon-git-plain colored text-[50px] opacity-15 absolute animate-float-medium" style="top:65%;left:18%"></i>
+      <i class="devicon-react-original colored text-[40px] opacity-15 absolute animate-float-fast" style="top:30%;right:15%"></i>
+      <i class="devicon-css3-plain colored text-[50px] opacity-15 absolute animate-float-medium" style="bottom:18%;right:22%"></i>
+      <i class="devicon-html5-plain colored text-[40px] opacity-15 absolute animate-float-slow" style="bottom:12%;left:50%"></i>
+      <!-- Contact-related Feather icons -->
+      <i data-feather="mail" class="text-blue-400 opacity-10 absolute animate-float-slow" style="top:10%;right:10%;width:56px;height:56px;"></i>
+      <i data-feather="phone" class="text-blue-300 opacity-10 absolute animate-float-medium" style="bottom:8%;left:20%;width:48px;height:48px;"></i>
+      <i data-feather="message-circle" class="text-blue-200 opacity-10 absolute animate-float-fast" style="top:55%;right:18%;width:44px;height:44px;"></i>
+      <i data-feather="linkedin" class="text-blue-400 opacity-10 absolute animate-float-medium" style="bottom:20%;right:40%;width:48px;height:48px;"></i>
+      <i data-feather="send" class="text-blue-300 opacity-10 absolute animate-float-fast" style="top:20%;left:30%;width:44px;height:44px;"></i>
+      <i data-feather="user" class="text-blue-200 opacity-10 absolute animate-float-slow" style="top:40%;right:25%;width:44px;height:44px;"></i>
+      <i data-feather="github" class="text-blue-400 opacity-10 absolute animate-float-medium" style="bottom:30%;left:40%;width:48px;height:48px;"></i>
+      <i data-feather="at-sign" class="text-blue-300 opacity-10 absolute animate-float-fast" style="top:35%;left:60%;width:44px;height:44px;"></i>
+      <i data-feather="globe" class="text-blue-200 opacity-10 absolute animate-float-slow" style="bottom:25%;right:30%;width:44px;height:44px;"></i>
+    </div>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-center bg-gradient-to-r from-blue-400 via-blue-300 to-blue-600 bg-clip-text text-transparent drop-shadow-lg tracking-tight">Contact for Queries</h2>
+    <div class="w-24 h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400/40 via-blue-300/30 to-blue-600/40 rounded-full"></div>
+    <p class="text-blue-200 text-center mb-8 text-sm sm:text-base max-w-2xl mx-auto">Have a question, project idea, or want to connect? Fill out the form and I'll get back to you as soon as possible!</p>
+    <!-- Contact Info Cards (added above form) -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      <div class="bg-slate-900/60 backdrop-blur rounded-xl p-5 flex items-center gap-4 border border-blue-800/60 shadow transition-all">
+        <i data-feather="mail" class="w-8 h-8 text-blue-400"></i>
+        <div>
+          <div class="font-semibold text-blue-100 text-base mb-1">Email</div>
+          <a href="mailto:sarawatadrika@gmail.com" class="text-blue-200 text-sm hover:underline">sarawatadrika@gmail.com</a>
+        </div>
+      </div>
+      <div class="bg-slate-900/60 backdrop-blur rounded-xl p-5 flex items-center gap-4 border border-blue-800/60 shadow transition-all">
+        <i data-feather="phone" class="w-8 h-8 text-blue-400"></i>
+        <div>
+          <div class="font-semibold text-blue-100 text-base mb-1">Phone</div>
+          <a href="tel:+917840862368" class="text-blue-200 text-sm hover:underline">+91 7840862368</a>
+        </div>
+      </div>
+      <div class="bg-slate-900/60 backdrop-blur rounded-xl p-5 flex items-center gap-4 border border-blue-800/60 shadow transition-all">
+        <i data-feather="map-pin" class="w-8 h-8 text-blue-400"></i>
+        <div>
+          <div class="font-semibold text-blue-100 text-base mb-1">Location</div>
+          <div class="text-blue-200 text-sm">Delhi-NCR, India</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-6 md:gap-12 p-2 md:p-4 relative z-10">
+      <!-- Contact Form Card -->
+      <form id="contact-form" action="https://formspree.io/f/mwpqkogw" method="POST" class="flex-1 bg-slate-900/60 backdrop-blur-lg border border-blue-800/60 rounded-xl p-3 sm:p-5 md:p-8 shadow-xl hover:shadow-blue-400 transition-shadow flex flex-col gap-4 sm:gap-5 m-1 sm:m-2 animate-fade-in w-full max-w-lg mx-auto">
+        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-blue-200 mb-1 sm:mb-2">Let's Connect</h3>
+        <!-- Name Field with Floating Label and Validation Icon -->
+        <div class="relative group">
+          <input type="text" name="name" id="contact-name" class="peer bg-slate-800 rounded px-3 pt-5 pb-2 w-full text-white outline-none text-sm sm:text-base focus:ring-2 focus:ring-blue-400 transition placeholder-transparent min-h-[44px]" placeholder="Your Name" required />
+          <label for="contact-name" class="absolute left-3 top-2 text-blue-200 text-xs sm:text-sm font-medium pointer-events-none transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-200">Your Name</label>
+          <span class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center text-base sm:text-lg" id="name-icon"></span>
+        </div>
+        <!-- Email Field with Floating Label and Validation Icon -->
+        <div class="relative group">
+          <input type="email" name="email" id="contact-email" class="peer bg-slate-800 rounded px-3 pt-5 pb-2 w-full text-white outline-none text-sm sm:text-base focus:ring-2 focus:ring-blue-400 transition placeholder-transparent min-h-[44px]" placeholder="Your Email" required />
+          <label for="contact-email" class="absolute left-3 top-2 text-blue-200 text-xs sm:text-sm font-medium pointer-events-none transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-200">Your Email</label>
+          <span class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center text-base sm:text-lg" id="email-icon"></span>
+        </div>
+        <!-- Message Field with Floating Label and Validation Icon -->
+        <div class="relative group">
+          <textarea name="message" id="contact-message" rows="4" class="peer bg-slate-800 rounded px-3 pt-5 pb-2 w-full text-white outline-none text-sm sm:text-base focus:ring-2 focus:ring-blue-400 transition placeholder-transparent resize-none min-h-[56px]" placeholder="Your Message" required></textarea>
+          <label for="contact-message" class="absolute left-3 top-2 text-blue-200 text-xs sm:text-sm font-medium pointer-events-none transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-200">Your Message</label>
+          <span class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center text-base sm:text-lg" id="message-icon"></span>
+        </div>
+        <button type="submit" class="bg-blue-600 px-4 py-3 rounded-lg shadow hover:bg-blue-700 transition w-full text-base font-semibold ripple min-h-[44px]">Send Message</button>
+        </form>
+      <div id="contact-success" class="hidden flex flex-col items-center justify-center bg-slate-900/80 border border-blue-400/60 rounded-xl shadow-lg px-4 py-6 sm:px-6 sm:py-8 mt-2 text-base sm:text-lg font-semibold text-green-400 animate-fade-in-success m-1 sm:m-2 w-full max-w-lg mx-auto">
+        <svg id="success-checkmark" class="mb-2 sm:mb-3" width="44" height="44" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="28" cy="28" r="26" stroke="#34D399" stroke-width="4" fill="none"/>
+          <path d="M16 29L25 38L40 20" stroke="#34D399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <animate attributeName="stroke-dasharray" from="0,40" to="40,0" dur="0.6s" fill="freeze"/>
+          </path>
+        </svg>
+        Thank you for your message! I appreciate your interest and will respond as soon as possible.
+        <button id="contact-another" type="button" class="bg-blue-600 text-white rounded px-4 py-2 mt-4 hover:bg-blue-700 transition w-full min-h-[44px]">Send another message</button>
+      </div>
+      <!-- Social Links Card -->
+      <div class="flex-1 flex flex-col gap-4 sm:gap-6 justify-center items-center bg-slate-900 rounded-lg p-4 sm:p-6 md:p-8 shadow-lg m-2">
+        <h3 class="text-lg sm:text-xl font-semibold text-blue-200 mb-2">Find Me Online</h3>
+        <div class="flex gap-4 sm:gap-6">
+          <a href="https://www.linkedin.com/in/adrika-sarawat-99209a328/" target="_blank" aria-label="LinkedIn"><i data-feather="linkedin" class="w-8 h-8 sm:w-10 sm:h-10 text-blue-400 hover:text-blue-200"></i></a>
+          <a href="https://github.com/Adrika-02" target="_blank" aria-label="GitHub"><i data-feather="github" class="w-8 h-8 sm:w-10 sm:h-10 text-blue-400 hover:text-blue-200"></i></a>
+        </div>
+        <div class="text-slate-300 mt-4 text-sm sm:text-base">
+          <span class="block">Email:</span>
+          <a href="mailto:sarawatadrika@gmail.com" class="text-blue-400 hover:underline">sarawatadrika@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes fade-in { from { opacity: 0; transform: translateY(40px);} to { opacity: 1; transform: none; } }
+      .animate-fade-in { animation: fade-in 1s ease; }
+      @keyframes fade-in-success { from { opacity: 0; transform: scale(0.95);} to { opacity: 1; transform: scale(1);} }
+      .animate-fade-in-success { animation: fade-in-success 0.7s cubic-bezier(0.4,0,0.2,1); }
+    </style>
+    </section>
+  <!-- Footer -->
+  <footer class="bg-slate-900 py-4 sm:py-6 text-center text-slate-400 text-xs sm:text-sm">
+    &copy; 2025 Adrika Sarawat. All rights reserved.
+    </footer>
+  <!-- Dynamic Typing Effect Script -->
+  <script>
+    const typingElement = document.getElementById('typing');
+    if (typingElement) {
+      const typingTexts = [
+        "Building Modern Web Experiences",
+        "Turning Ideas into Code",
+        "Passionate About UI/UX",
+        "Delivering Impactful Solutions"
+      ];
+      let typingIndex = 0, charIndex = 0, isDeleting = false;
+      function type() {
+        const current = typingTexts[typingIndex];
+        if (isDeleting) {
+          typingElement.textContent = current.substring(0, charIndex--);
+          if (charIndex < 0) {
+            isDeleting = false;
+            typingIndex = (typingIndex + 1) % typingTexts.length;
+            setTimeout(type, 500);
+          } else {
+            setTimeout(type, 40);
+          }
+        } else {
+          typingElement.textContent = current.substring(0, charIndex++);
+          if (charIndex > current.length) {
+            isDeleting = true;
+            setTimeout(type, 1200);
+          } else {
+            setTimeout(type, 80);
+          }
+        }
+      }
+      type();
+    }
+  </script>
+  <!-- Mobile Nav Toggle Script -->
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <!-- Feather Icons Init -->
+  <script>
+    feather.replace();
+  </script>
+  <script>
+    // Animate skills on scroll
+    function animateSkills() {
+      const skills = document.querySelectorAll('.skill-card');
+      const trigger = window.innerHeight * 0.9;
+      skills.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < trigger) {
+          card.style.opacity = 1;
+          card.style.transform = 'translateY(0)';
+        } else {
+          card.style.opacity = 0;
+          card.style.transform = 'translateY(40px)';
+        }
+      });
+    }
+    window.addEventListener('scroll', animateSkills);
+    window.addEventListener('load', animateSkills);
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    const contactSuccess = document.getElementById('contact-success');
+    const contactAnother = document.getElementById('contact-another');
+    if (contactForm && contactSuccess) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const formData = new FormData(contactForm);
+        const action = contactForm.getAttribute('action');
+        try {
+          const response = await fetch(action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            contactForm.style.display = 'none';
+            contactSuccess.classList.remove('hidden');
+            if (window.feather) feather.replace();
+          } else {
+            alert('There was a problem submitting your message. Please try again later.');
+          }
+        } catch (err) {
+          alert('There was a problem submitting your message. Please try again later.');
+        }
+      });
+    }
+    if (contactAnother && contactForm && contactSuccess) {
+      contactAnother.addEventListener('click', function() {
+        contactForm.reset();
+        contactForm.style.display = '';
+        contactSuccess.classList.add('hidden');
+      });
+    }
+  });
+  </script>
+  </body>
+</html>
