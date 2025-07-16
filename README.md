@@ -3,7 +3,7 @@
 ## Overview
 This is my personal portfolio website, designed to showcase my skills, projects, resume, and contact information. Built with only HTML and Tailwind CSS, it serves as my professional online identity and a platform to connect with collaborators, recruiters, and fellow developers.
 
-## 🔗 Live Demo:
+## 🔗 Live Demo: https://adrika-02.github.io/Adrika-Sarawat-Portfolio/
 
 ## Features
 - Modern, responsive single-page design
